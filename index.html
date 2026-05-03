@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudFront Masterclass | ייהאתר המקצועי שלי</title>
+    <style>
+        :root {
+            --aws-orange: #FF9900;
+            --aws-blue: #232F3E;
+            --cloud-grad: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8fafc;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .card {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            border-top: 8px solid var(--aws-orange);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .badge {
+            background-color: #e2e8f0;
+            color: var(--aws-blue);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            color: var(--aws-blue);
+            font-size: 2.5rem;
+            margin: 1.5rem 0 1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #64748b;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 2rem 0;
+            text-align: right;
+        }
+
+        .feature-item {
+            background: #f1f5f9;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-item::before {
+            content: "☁️";
+            margin-left: 8px;
+        }
+
+        .btn {
+            background: var(--cloud-grad);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <span class="badge">AWS Cloud Project</span>
+        <h1>האתר הסטטי המעודכן 🚀</h1>
+        <p>האתר הזה מוגש אליכם היישר משרתי הקצה של <strong>Amazon CloudFront</strong>, לאחר שאוחסן בבטחה בתוך <strong>S3 Bucket</strong> חסוי לגמרי.</p>
+        
+        <div class="features">
+            <div class="feature-item">ביצועים גבוהים (CDN)</div>
+            <div class="feature-item">אבטחת OAC הדוקה</div>
+            <div class="feature-item">פריסה אוטומטית ב-Git</div>
+            <div class="feature-item">Cache Invalidation</div>
+        </div>
+
+        <a href="#" class="btn">בואו נתחיל בעבודהחדשחדש</a>
+
+        <footer>
+            שנה ג' | סמסטר ב' | פיתוח בסביבת ענן
+        </footer>
+    </div>
+
+</body>
+</html>
